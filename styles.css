@@ -1,0 +1,118 @@
+/* variables */
+
+:root {
+  --color-html: rgb(62, 84, 163);
+  --color-css: rgb(255, 179, 0);
+  --color-js: rgb(255, 217, 0);
+  --color-react: rgb(0, 162, 255);
+  --color-complexity-intermediate: rgb(241, 182, 4);
+  --color-plan-premium: rgb(62, 84, 163);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  color: #1c2022;
+}
+
+.content {
+  font-size: 1.6rem;
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #9cb5b7;
+}
+
+.card__figure {
+  width: 100%;
+}
+.card__img {
+  width: 100%;
+  height: auto;
+}
+.card__body {
+  padding: 2.5rem;
+}
+.card__title {
+  margin-bottom: 2rem;
+}
+.card__detail {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.card__tech {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+.card__tech li:nth-child(1) {
+  color: var(--color-html);
+}
+.card__tech li:nth-child(2) {
+  color: var(--color-css);
+}
+.card__tech li:nth-child(3) {
+  color: var(--color-js);
+}
+.card__complexity {
+  display: flex;
+
+  border: 1px solid var(--color-complexity-intermediate);
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--color-complexity-intermediate);
+}
+.card__complexity span:first-child {
+  background: var(--color-complexity-intermediate);
+  color: white;
+  padding: 0.75rem;
+}
+.card__complexity span:last-child {
+  padding: 0.75rem;
+}
+.card__content {
+  padding-top: 1rem;
+  color: #737373;
+}
+.card__plan {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  background: var(--color-plan-premium);
+  color: white;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-radius: 5rem;
+}

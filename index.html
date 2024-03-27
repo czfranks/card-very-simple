@@ -4,8 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Hola, soy una Card
+    <div class="content">
+      <article class="card">
+        <figure class="card__figure">
+          <img class="card__img" src="https://www.frontendmentor.io/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdz209s6jk%2Fimage%2Fupload%2Fv1699537598%2FChallenges%2Ffggitxx9mfkjftdqq8lo.jpg&w=384&q=75" alt="imagen de la card">
+        </figure>
+        <div class="card__body">
+          <h2 class="card__title">
+            Frontend Quiz app
+          </h2>
+          <div class="card__detail">
+            <ul class="card__tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+            <div class="card__complexity">
+              <span>3</span>
+              <span>INTERMEDIATE</span>
+            </div>
+          </div>
+          <p class="card__content">
+            This app will test your skills (as well as your knowledge!) as you build out a fully functional quiz. We provide a local JSON file to help you practice working with JSON!
+          </p>
+        </div>
+        <span class="card__plan">PREMIUM</span>
+      </article>
   </body>
 </html>
